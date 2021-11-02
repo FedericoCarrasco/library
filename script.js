@@ -1,53 +1,4 @@
-const library = [
-    {
-        title: `Harry Potter and the Sorcerer's Stone`,
-        author: `J.K. Rowling`,
-        pages: 345,
-        read: 'Not yet',
-    },
-    {
-        title: `Harry Potter and the Chamber of Secrets`,
-        author:`J.K. Rowling`,
-        pages: 141,
-        read: `Not yet`,
-    },
-    {
-        title: `Harry Potter and the Prisoner of Azkaban`,
-        author:`J.K. Rowling`,
-        pages: 180,
-        read: `Not yet`,
-    },
-    {
-        title: `Harry Potter and the Goblet of Fire`,
-        author:`J.K. Rowling`,
-        pages: 301,
-        read: `Not yet`,
-    },
-    {
-        title: `Harry Potter and the Order of the Phoenix`,
-        author:`J.K. Rowling`,
-        pages: 412,
-        read: `Not yet`,
-    },
-    {
-        title: `Harry Potter and the Half-Blood Prince`,
-        author:`J.K. Rowling`,
-        pages: 652,
-        read: `Not yet`,
-    },
-    {
-        title: `Harry Potter and the Deathly Hallows`,
-        author:`J.K. Rowling`,
-        pages: 316,
-        read: `Not yet`,
-    },
-    {
-        title: `Harry Potter and the Cursed Child`,
-        author:`J.K. Rowling`,
-        pages: 336,
-        read: `Not yet`,
-    }
-];
+const library = [];
 
 function Book (title, author, pages, readed) {
     this.title = title
@@ -63,3 +14,12 @@ function addBookToLibrary (title, author, pages, readed) {
     let newBook = new Book(title, author, pages, readed)
     library.push(newBook)
 }
+
+addBookToLibrary (`Harry Potter and the Sorcerer's Stone`, `J.K. Rowling`, 345, `No`);
+addBookToLibrary (`Harry Potter and the Chamber of Secrets`, `J.K. Rowling`, 141, `No`);
+addBookToLibrary (`Harry Potter and the Prisoner of Azkaban`, `J.K. Rowling`, 180, `No`);
+addBookToLibrary (`Harry Potter and the Goblet of Fire`, `J.K. Rowling`, 301, `No`);
+addBookToLibrary (`Harry Potter and the Order of the Phoenix`, `J.K. Rowling`, 412, `No`);
+addBookToLibrary (`Harry Potter and the Half-Blood Prince`, `J.K. Rowling`, 652, `No`);
+addBookToLibrary (`Harry Potter and the Deathly Hallows`, `J.K. Rowling`, 316, `No`);
+addBookToLibrary (`Harry Potter and the Cursed Child`, `J.K. Rowling`, 336, `No`);
