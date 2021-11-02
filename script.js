@@ -34,22 +34,22 @@ function updateDisplay () {
             bookDiv.innerHTML += 
             `
             <div class="card">
-                <button>x</button>
                 <h3>${library[i].title}</h3>
                 <p>Author: ${library[i].author}</p>
                 <p>Pages: ${library[i].pages}</p>
                 <p>Readed: <input type="checkbox"></p>
+                <button>x</button>
             </div>
             `
         } else if (library[i].readed === `Yes`) {
             bookDiv.innerHTML += 
             `
             <div class="card">
-                <button>x</button>
                 <h3>${library[i].title}</h3>
                 <p>Author: ${library[i].author}</p>
                 <p>Pages: ${library[i].pages}</p>
                 <p>Readed: <input type="checkbox" checked></p>
+                <button>x</button>
             </div>
             `
         }
