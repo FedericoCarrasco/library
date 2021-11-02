@@ -27,6 +27,8 @@ addBookToLibrary (`Harry Potter and the Deathly Hallows`, `J.K. Rowling`, 316, `
 addBookToLibrary (`Harry Potter and the Cursed Child`, `J.K. Rowling`, 336, `No`);
 
 function updateDisplay () {
+    bookDiv.innerHTML = '';
+
     for (let i = 0; i < library.length; i++) {
         if (library[i].readed === `No`) {
             bookDiv.innerHTML += 
