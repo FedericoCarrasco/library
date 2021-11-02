@@ -36,7 +36,7 @@ body {
     flex-flow: column;
     align-items: flex-start;
     border-radius: 3%;
-    box-shadow: 1px 1px 10px rgb(55, 55, 55);
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
 }
 
 .card button {
