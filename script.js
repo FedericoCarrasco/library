@@ -1,4 +1,6 @@
 const library = [];
+const bookDiv = document.querySelector('.bookDiv');
+
 
 function Book (title, author, pages, readed) {
     this.title = title
@@ -23,3 +25,32 @@ addBookToLibrary (`Harry Potter and the Order of the Phoenix`, `J.K. Rowling`, 4
 addBookToLibrary (`Harry Potter and the Half-Blood Prince`, `J.K. Rowling`, 652, `No`);
 addBookToLibrary (`Harry Potter and the Deathly Hallows`, `J.K. Rowling`, 316, `No`);
 addBookToLibrary (`Harry Potter and the Cursed Child`, `J.K. Rowling`, 336, `No`);
+
+function updateDisplay () {
+    for (let i = 0; i < library.length; i++) {
+        if (library[i].readed === `No`) {
+            bookDiv.innerHTML += 
+            `
+            <div class="card">
+                <button>x</button>
+                <h3>${library[i].title}</h3>
+                <p>Author: ${library[i].author}</p>
+                <p>Pages: ${library[i].pages}</p>
+                <p>Readed: <input type="checkbox"></p>
+            </div>
+            `
+        } else if (library[i].readed === `Yes`) {
+            bookDiv.innerHTML += 
+            `
+            <div class="card">
+                <button>x</button>
+                <h3>${library[i].title}</h3>
+                <p>Author: ${library[i].author}</p>
+                <p>Pages: ${library[i].pages}</p>
+                <p>Readed: <input type="checkbox" checked></p>
+            </div>
+            `
+        }
+    }
+}
+updateDisplay()
