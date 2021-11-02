@@ -14,7 +14,7 @@ function Book (title, author, pages, readed) {
 
 function addBookToLibrary (title, author, pages, readed) {
     let newBook = new Book(title, author, pages, readed)
-    library.push(newBook)
+    library.unshift(newBook)
 }
 
 addBookToLibrary (`Harry Potter and the Sorcerer's Stone`, `J.K. Rowling`, 345, `No`);
