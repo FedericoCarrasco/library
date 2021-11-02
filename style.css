@@ -1,0 +1,25 @@
+body {
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 50px 0;
+    color: rgb(75, 75, 75);
+    font-family: "Helvetica";
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+.header h1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: rgb(205, 150, 60);
+}
+.header p {
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.card {
+
+}
