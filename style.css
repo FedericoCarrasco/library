@@ -44,4 +44,9 @@ body {
     width: 25px;
     border-radius: 50%;
     align-self: flex-end;
+    border: none;
+    cursor: pointer;
+}
+.card button:active {
+    background-color: rgb(255, 255, 255);
 }
