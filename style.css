@@ -50,3 +50,7 @@ body {
 .card button:active {
     background-color: rgb(255, 255, 255);
 }
+
+.card input {
+    cursor: pointer;
+}
